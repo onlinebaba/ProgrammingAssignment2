@@ -5,10 +5,9 @@
 ## retrieve the inverse from the cache.
 
 
-## The makeCacheMatrix function creates This function creates a special "matrix" object that can 
-## cache its inverse. This function also has inner function calls that allow maniputation of cache.
-## The underlying implemetation takes advantage of the scoping rules of the R language and how they 
-## can be manipulated to preserve state inside of an R object
+## This function creates a special "matrix" object that can cache its inverse and provides innner functions
+## that allow maniputation of cache. The underlying implemetation takes advantage of the scoping rules of 
+## the R language and how they can be manipulated to preserve state inside of an R object
 makeCacheMatrix <- function(x = matrix()) {
   
   # Initialize the cachedInverse matrix
