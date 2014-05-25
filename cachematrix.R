@@ -6,7 +6,7 @@
 
 
 ## This function creates a special "matrix" object that can cache its inverse and provides innner functions
-## that allow maniputation of cache. The underlying implemetation takes advantage of the scoping rules of 
+## that allow maniputation of cache. The underlying implementation takes advantage of the scoping rules of 
 ## the R language and how they can be manipulated to preserve state inside of an R object
 makeCacheMatrix <- function(x = matrix()) {
   
